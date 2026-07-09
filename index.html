@@ -4,7 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Friend Zone SMP</title>
+.ranks{
+text-align:center;
+padding:40px;
+}
 
+.rank{
+background:#1b1b1b;
+margin:15px auto;
+padding:15px;
+width:300px;
+border-radius:12px;
+border:2px solid #00d4ff;
+font-size:22px;
+color:white;
+}
 <style>
 *{
 margin:0;
@@ -160,15 +174,43 @@ alert("Server IP Copied!");
 
 <h3>🔷 Diamond ━ 💵 ₹100</h3>
 <p>Starter Rank</p>
-<section>
-<h2>💎 Server Ranks 💎</h2>
+<section class="ranks">
+<h2>💎 Server Ranks</h2>
 
-<div class="card">
-<h3>👑 King+ ━ ₹450</h3>
-<h3>👑 King ━ ₹300</h3>
-<h3>✨ Rich ━ ₹210</h3>
-<h3>🔷 Diamond ━ ₹100</h3>
-</div>
+<div class="rank">👑 King+ - ₹450</div>
+<div class="rank">👑 King - ₹300</div>
+<div class="rank">✨ Rich - ₹210</div>
+<div class="rank">🔷 Diamond - ₹100</div>
+<section class="ranks">
+<h2>💎 Server Ranks</h2>
+
+<div class="rank">👑 King+ - ₹450</div>
+<div class="rank">👑 King - ₹300</div>
+<div class="rank">✨ Rich - ₹210</div>
+<div class="rank">🔷 Diamond - ₹100</div>
+<section class="player-search">
+  <h2>🔍 Player Stats</h2>
+
+  <input type="text" id="username" placeholder="Enter Minecraft Username">
+
+  <button onclick="searchPlayer()">Search</button>
+
+  <div id="result"></div>
+</section>
+
+<script>
+function searchPlayer(){
+let user=document.getElementById("username").value;
+
+document.getElementById("result").innerHTML=`
+<h3>${user}</h3>
+<p>👑 Rank: Loading...</p>
+<p>⏰ Playtime: Loading...</p>
+<p>⚔️ Kills: Loading...</p>
+`;
+}
+</script>
+</section>
 </section>
 </div>
 </section>
