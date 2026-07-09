@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friend Zone SMP</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0b1020;
+color:#fff;
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+h1{
+font-size:60px;
+text-shadow:0 0 20px #00d4ff;
+}
+
+p{
+margin-top:10px;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:15px 35px;
+background:#00d4ff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+transition:.3s;
+cursor:pointer;
+}
+
+.btn:hover{
+transform:scale(1.08);
+background:#0099cc;
+}
+
+section{
+padding:70px 20px;
+text-align:center;
+}
+
+.card{
+max-width:700px;
+margin:auto;
+background:#151d33;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,212,255,.4);
+}
+
+footer{
+padding:20px;
+background:#111;
+text-align:center;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<h1>🔥 Friend Zone SMP 🔥</h1>
+
+<p>Join our Minecraft Server Today!</p>
+
+<button class="btn" onclick="copyIP()">📋 Copy Server IP</button>
+
+<a class="btn" href="https://discord.gg/fPazfUg5k" target="_blank">💬 Join Discord</a>
+
+</header>
+
+<section>
+
+<div class="card">
+
+<h2>Server Information</h2>
+
+<br>
+
+<h3>IP</h3>
+
+<p id="ip">Friend_Zone1.aternos.me:15893</p>
+
+<br>
+
+<h3>Status</h3>
+
+<p>🟢 Online</p>
+
+<br>
+
+<h3>Version</h3>
+
+<p>Latest Java & Bedrock</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Friend Zone SMP
+
+</footer>
+
+<script>
+
+function copyIP(){
+
+navigator.clipboard.writeText("Friend_Zone1.aternos.me:15893");
+
+alert("Server IP Copied!");
+
+}
+
+</script>
+
+</body>
+</html>
